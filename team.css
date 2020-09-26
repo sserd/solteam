@@ -1,0 +1,132 @@
+body, h1, h2, h3, button{
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: lighter;
+  color: white;
+  background-color:black
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+p{
+    text-align:justify;
+}
+
+#main{
+  position: absolute;
+  left:5%;
+  font-weight: lighter;
+  font-size: 30px;
+  top :0%;
+  margin-top:0.5% ;
+  margin-bottom: 0%;
+  text-decoration: overline rgb(235, 231, 3);
+  height: 10%;
+}
+.topnav {
+  position: relative;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  width: 100%;
+  height: 10%;
+  background-color:black;
+  overflow: hidden;
+  border-bottom: 1px solid white;
+}
+
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover, button:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: gray;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.column {
+  float: left;
+  height: 45%;
+  width: 33.3%;
+  max-height: 40%;
+  margin-bottom: 27px;
+  padding: 0 12px;
+  padding-bottom: 15px;
+}
+
+button{
+  outline: none;
+  border:none;
+  display: inline;
+}
+
+button img{
+    height:30px;
+    width: 30px;
+    margin-top:2px;
+}
+
+#thumbnail{
+    float: left;
+    align-content: center;
+    width:70%;
+    padding-left: 37.5%;
+}
+
+.email{
+  text-align:center;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 80%;
+    display: block;
+    margin-left: 10%;
+  }
+
+  #h1{
+    text-align: center;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 5%;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding-top: 5%;
+}
+
+
